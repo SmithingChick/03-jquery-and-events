@@ -18,7 +18,7 @@ Article.prototype.toHtml = function() {
   //       Doing so will allow us to use selectors to target articles, based on who wrote them.
 
   $newArticle.find('.byline a').text(this.author);
-  $newArticle.find('.byline a').attr('href', this.authorUrl);
+  $newArticle.find('.byline a').attr('href', this.authorUrl); 
   $newArticle.find('h1:first').text(this.title);
   $newArticle.find('.article-body').html(this.body);
   $newArticle.find('time[pubdate]').attr('datetime', this.publishedOn);
