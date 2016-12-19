@@ -63,3 +63,9 @@ articleView.setTeasers = function() {
 };
 
 // TODO: Invoke all of the above functions (I mean, methods!):
+
+articleView.populateFilters();
+articleView.handleAuthorFilter();
+articleView.handleCategoryFilter();
+articleView.handleMainNav();
+articleView.setTeasers();
